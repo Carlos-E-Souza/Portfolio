@@ -7,8 +7,11 @@ import NavBar from "./components/NavBar/NavBar"
 
 import "./App.css"
 import ContactsWidget from "./components/Contact/ContactsWidget"
+import useWindowDimensions from "./hooks/WindowDimensions"
 
 function App() {
+    const { width, height } = useWindowDimensions()
+
     return (
         <div className="App">
             <NavBar />
@@ -18,7 +21,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="*" element={<Navigate replace to="/" />} />
             </Routes>
-            <ContactsWidget />
+            {width > 760 ? <ContactsWidget /> : null}
         </div>
     )
 }

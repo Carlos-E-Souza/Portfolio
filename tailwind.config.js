@@ -16,6 +16,9 @@ module.exports = {
             animation: {
                 up: "scale(0.97) ease-in-out",
             },
+            gridTemplateColumns: {
+                tecs: "repeat(2, minmax(140px, 200px))",
+            },
         },
     },
     plugins: [],

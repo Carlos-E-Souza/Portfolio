@@ -1,5 +1,5 @@
 .contactsWidget {
-    @apply absolute bottom-5 right-0 flex justify-end items-center
+    @apply fixed bottom-5 right-0 flex justify-end items-center
         sm:bottom-0 sm:right-12 sm:flex-col sm:justify-center;
 }
 

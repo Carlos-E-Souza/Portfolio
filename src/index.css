@@ -5,6 +5,7 @@
 html {
     @apply w-screen h-screen;
 }
+
 body {
     @apply bg-gradient-to-l from-surface-pri to-surface-third font-sans;
 }
