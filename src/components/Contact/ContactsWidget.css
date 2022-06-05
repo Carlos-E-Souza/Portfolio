@@ -1,0 +1,16 @@
+.contactsWidget {
+    @apply absolute bottom-5 right-0 flex justify-end items-center
+        sm:bottom-0 sm:right-12 sm:flex-col sm:justify-center;
+}
+
+.contactsNavBar {
+    @apply flex justify-around items-center sm:flex-col sm:justify-center;
+}
+
+.contactsLink {
+    @apply no-underline text-surface-third mx-3 sm:my-3 hover:text-txt-pri hover:animate-bounce ease-in-out;
+}
+
+.line {
+    @apply sm:w-0.5 sm:h-20 bg-surface-third bg-opacity-100 hover:animate-spin;
+}

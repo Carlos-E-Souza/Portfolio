@@ -1,0 +1,15 @@
+.projects-container {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    animation: drop 1.5s ease-in-out forwards;
+}
+
+@keyframes drop {
+    from {margin-bottom: 100vh;}
+    to {margin-bottom: 0;}
+}

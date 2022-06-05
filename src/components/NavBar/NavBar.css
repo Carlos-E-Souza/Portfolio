@@ -1,0 +1,58 @@
+.toggle-nav {
+    @apply flex justify-center items-center text-surface-pri bg-surface-third border-none absolute
+        top-3 left-3 w-11 h-11 rounded-full cursor-pointer;
+}
+
+.toggle-nav.hidden {
+    display: none;
+}
+
+.toggle-icon {
+    @apply w-10 h-10 font-bold;
+}
+
+.navigation {
+    @apply flex flex-col absolute top-0 left-0 bottom-0 bg-surface-pri w-full
+        rounded-tr-lg rounded-br-lg overflow-hidden transition-all ease-in-out duration-200
+        sm:w-1/4 lg:w-1/5 z-10;
+}
+
+.navigation.hidden {
+    display: none;
+}
+
+.nav-close-btn {
+    @apply bg-surface-pri absolute self-end bottom-2 right-2;
+}
+
+.nav-close-icon {
+    @apply text-surface-third cursor-pointer font-bold text-4xl w-12 h-12 hover:text-txt-sec;
+}
+
+.navigation ul {
+    @apply absolute top-5 left-0 m-0 w-full pl-4;
+}
+
+.nav-list-item {
+    @apply relative list-none w-full;
+}
+
+.nav-list-item.active {
+    @apply bg-surface-sec rounded-tl-2xl rounded-bl-2xl;
+}
+
+.nav-link {
+    @apply relative w-full h-auto flex justify-start items-center no-underline text-txt-pri py-2;
+}
+
+.nav-icon {
+    @apply relative px-3;
+}
+
+.icon {
+    @apply text-2xl font-bold;
+}
+
+.nav-item-title {
+    @apply relative text-2xl;
+}

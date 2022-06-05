@@ -1,0 +1,26 @@
+.repo-card {
+    width: 30%;
+    height: auto;
+    padding: 5px 15px;
+    margin: 3%;
+    border-radius: 20px;
+    background-color: #2C5364;
+    color: #fff;
+    box-shadow: 0.3em 0.3em 0.7em #00000015;
+    transition: border .3s ease-in-out;
+    border: #0F2027 3px solid;
+    text-decoration: none;
+}
+
+.repo-card:hover {
+    border: #2C5364 3px solid;
+    background-color: #0F2027;
+}
+
+.repo-card p{
+    word-wrap: break-word;  
+}
+
+.repo-lang {
+    color: #d6d6d6;
+}
