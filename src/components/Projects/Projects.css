@@ -1,15 +1,12 @@
-.projects-container {
-    width: 70%;
-    height: auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 5%;
-    animation: drop 1.5s ease-in-out forwards;
+.projects {
+    @apply flex flex-col w-full h-auto absolute top-14 justify-center items-center;
 }
 
-@keyframes drop {
-    from {margin-bottom: 100vh;}
-    to {margin-bottom: 0;}
+.projects-title {
+    @apply text-2xl font-bold text-txt-pri;
+}
+
+.repos-container {
+    @apply relative w-full h-auto flex flex-col justify-center items-center p-5
+        sm:flex-row sm:flex-wrap;
 }

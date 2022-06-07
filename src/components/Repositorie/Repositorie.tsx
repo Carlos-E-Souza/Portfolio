@@ -1,27 +1,35 @@
-import { FunctionComponent, useState } from "react";
-import { Link } from "react-router-dom";
-import './Repositorie.css'
+import { FunctionComponent, useState } from "react"
+import { Link } from "react-router-dom"
+import { FolderNotch, Link as ILink } from "phosphor-react"
+import "./Repositorie.css"
 
 interface RepositorieProps {
-    repoName: string;
-    repoLang: string;
-    repoUrl: string;
+    repoName: string
+    repoDesc: string
+    repoLang: string
+    repoUrl: string
 }
- 
-const Repositorie: FunctionComponent<RepositorieProps> = (props) => {
-    const { repoName, repoLang, repoUrl} = props
 
-    if(repoName === 'Carlos-E-Souza/Carlos-E-Souza') {
+const Repositorie: FunctionComponent<RepositorieProps> = (props) => {
+    const { repoName, repoLang, repoUrl, repoDesc } = props
+
+    if (repoName === "Carlos-E-Souza") {
         return null
     }
 
-    return (  
-        <Link to={repoUrl} className='repo-card'>
-            <p>{repoName}</p>
-            <p className='repo-lang'>Language: {repoLang}</p>
-        </Link>
-        
-    );
+    return (
+        <a href={repoUrl} target="_blank" className="repo-card group">
+            <header className="repo-card-header">
+                <FolderNotch className="folder-icon" />{" "}
+                <ILink className="link-icon" />
+            </header>
+            <h2 className="repo-title group-hover:text-surface-third">
+                {repoName}
+            </h2>
+            <p>{repoDesc}</p>
+            <span className="repo-lang">{repoLang}</span>
+        </a>
+    )
 }
- 
-export default Repositorie;
+
+export default Repositorie

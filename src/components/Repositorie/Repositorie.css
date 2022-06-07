@@ -1,26 +1,28 @@
 .repo-card {
-    width: 30%;
-    height: auto;
-    padding: 5px 15px;
-    margin: 3%;
-    border-radius: 20px;
-    background-color: #2C5364;
-    color: #fff;
-    box-shadow: 0.3em 0.3em 0.7em #00000015;
-    transition: border .3s ease-in-out;
-    border: #0F2027 3px solid;
-    text-decoration: none;
+    @apply relative w-11/12 sm:w-2/6 h-auto sm:h-72 p-5 m-2 rounded-lg bg-surface-pri text-txt-pri shadow-lg
+        border-surface-third border-2 no-underline hover:scale-[1.02];
 }
 
-.repo-card:hover {
-    border: #2C5364 3px solid;
-    background-color: #0F2027;
+.repo-card-header {
+    @apply w-full flex justify-between items-center mb-6;
 }
 
-.repo-card p{
-    word-wrap: break-word;  
+.folder-icon {
+    @apply w-12 h-auto font-medium text-surface-third;
+}
+
+.link-icon {
+    @apply w-8 h-auto font-normal;
+}
+
+.repo-card h2 {
+    @apply text-xl mb-3;
+}
+
+.repo-card p {
+    @apply break-words text-txt-sec mb-4;
 }
 
 .repo-lang {
-    color: #d6d6d6;
+    @apply text-txt-third absolute bottom-5 left-5;
 }

@@ -19,11 +19,14 @@ const Home: FunctionComponent<HomeProps> = () => {
                             Know more about me
                         </button>
                     </Link>
-                    <Link to="/contact" className="home-link-btn">
+                    <a
+                        href="https://github.com/Carlos-E-Souza"
+                        target="_blank"
+                        className="home-link-btn">
                         <button className="home-connect btn">
                             Connect with me
                         </button>
-                    </Link>
+                    </a>
                 </div>
                 <img src={homeAnime} alt="animation" className="home-anime" />
             </div>
