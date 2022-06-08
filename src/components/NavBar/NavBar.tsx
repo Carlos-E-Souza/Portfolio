@@ -21,14 +21,12 @@ const NavBar: FunctionComponent<NavBarProps> = () => {
     return (
         <div ref={ref}>
             <button
-                className={isNavBarVisible ? "toggle-nav hidden" : "toggle-nav"}
+                className={isNavBarVisible ? "hidden" : "toggle-nav"}
                 onClick={() => setIsNavBarVisible(true)}>
                 <List className="toggle-icon active" />
             </button>
             <nav
-                className={
-                    isNavBarVisible ? "navigation" : "navigation hidden"
-                }>
+                className={isNavBarVisible ? "navigation" : "navigation hidde"}>
                 <button
                     className="nav-close-btn"
                     onClick={() => setIsNavBarVisible(false)}>

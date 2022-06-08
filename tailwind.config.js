@@ -18,15 +18,15 @@ module.exports = {
             },
             keyframes: {
                 up: {
-                    "100%": { transform: "scale(1.1)" },
+                    "100%": { transform: "transalateY(10px)" },
                 },
                 slideIn: {
-                    "0%": { transform: "translateX(300px)" },
-                    "20%": { transform: "translateX(250px)" },
-                    "40%": { transform: "translateX(200px)" },
-                    "60%": { transform: "translateX(150px)" },
-                    "80%": { transform: "translateX(100px)" },
-                    "100%": { transform: "translateX(0px)" },
+                    "0%": { transform: "translateX(-100%)" },
+                    "20%": { transform: "translateX(-80%)" },
+                    "40%": { transform: "translateX(-60%)" },
+                    "60%": { transform: "translateX(-40%)" },
+                    "80%": { transform: "translateX(-20%)" },
+                    "100%": { transform: "translateX(0%)" },
                 },
             },
             animation: {
