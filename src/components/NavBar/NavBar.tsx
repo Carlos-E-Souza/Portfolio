@@ -14,10 +14,9 @@ import "./NavBar.css"
 interface NavBarProps {}
 
 const NavBar: FunctionComponent<NavBarProps> = () => {
-    //const [navVisible, setNavVisible] = useState(false)
     const currentPath = useLocation().pathname
     const { ref, isNavBarVisible, setIsNavBarVisible } =
-        useComponentVisible(true)
+        useComponentVisible(false)
 
     return (
         <div ref={ref}>

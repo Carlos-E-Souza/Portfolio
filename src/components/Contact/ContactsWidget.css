@@ -1,5 +1,5 @@
 .contactsWidget {
-    @apply fixed bottom-5 right-0 flex justify-end items-center
+    @apply fixed bottom-5 flex justify-end items-center
         sm:bottom-0 sm:right-12 sm:flex-col sm:justify-center;
 }
 
@@ -8,7 +8,8 @@
 }
 
 .contactsLink {
-    @apply no-underline text-surface-third mx-3 sm:my-3 hover:text-txt-pri hover:animate-bounce ease-in-out;
+    @apply no-underline text-txt-sec sm:text-surface-third mx-3 sm:my-3
+        hover:text-txt-pri hover:animate-bounce ease-in-out;
 }
 
 .line {

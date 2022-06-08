@@ -1,5 +1,5 @@
 .repo-card {
-    @apply relative w-11/12 sm:w-2/6 h-auto sm:h-72 p-5 m-2 rounded-lg bg-surface-pri text-txt-pri shadow-lg
+    @apply relative w-11/12 sm:w-2/6 h-72 p-5 m-2 rounded-lg bg-surface-pri text-txt-pri shadow-lg
         border-surface-third border-2 no-underline hover:scale-[1.02];
 }
 
